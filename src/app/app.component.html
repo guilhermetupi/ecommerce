@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+  <mat-sidenav color="primary" mode="over" align="start" #sidenav>
+    <mat-list>
+      <mat-list-item> Item </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div class="navigation container">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon class="mat-18">menu</mat-icon>
+        </button>
+        <span>
+          <a routerLink="/">TITLE</a>
+        </span>
+        <div class="nav-items">
+          <a routerLink="/">Home</a>
+          <a routerLink="/courses">Courses</a>
+          <a routerLink="/about">About</a>
+          <a routerLink="/login" *ngIf="!isLogged">Login</a>
+          <a *ngIf="isLogged" (click)="logout()">User</a>
+          <a routerLink="/">
+            0 <mat-icon class="mat-18">shopping_cart</mat-icon>
+          </a>
+        </div>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

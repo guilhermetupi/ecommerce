@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: "Cabin Condensed";
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px !important;
+  margin: auto;
+}
+
+.full-height {
+  height: calc(100vh - 64px);
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.full-size {
+  height: calc(100vh - 64px);
+  width: 100vw;
+}
+
+.fx-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden !important;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
